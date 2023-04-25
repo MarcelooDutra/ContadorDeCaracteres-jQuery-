@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura-Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header class="center">
+            <h1>Alura Typer</h1>
+        </header>
+        <main>
+            <div class="center">
+                <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quasi, eius laboriosam repellendus id molestiae perferendis cumque omnis provident! Accusantium totam officia temporibus expedita cumque quidem esse dignissimos! Eligendi, suscipit.</p>
+            </div>
+            <div>
+                <ul class="informacoes center">
+                    <li>
+                        <i class="small material-icons icones">description</i>
+                        <span id="contadorPalavra">30</span> palavras
+                    </li>
+                    <li>
+                        <i class="small material-icons icones">query_builder</i>
+                        <span id="contagemTempo">10</span> segundos
+                    </li>
+                </ul>
+            </div>
+            <div class="areaTexto">
+                <textarea id="caixaTexto" placeholder="Digite seu texto aqui..." rows="8" cols="80"></textarea>
+
+                <div class="botoes">
+                    <a class="btn-floating btn-large waves-effect waves-light red" id="botaoReiniciar">
+                        <i class="material-icons">restore</i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <ul class="quantidadeCaracteres center">
+                    <li><span id="contadorCaracter">0</span> caracteres</li>
+                    <li><span id="quantPalavras">0</span> palavras</li>
+                </ul>
+            </div>
+            <section class="placar">
+                <h3>Placar</h3>
+                <table class="centered bordered">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>N° de palavras</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Usuário padrão</td>
+                            <td>999</td>
+                            <td>
+                                <a href="#" class="botao-remover">
+                                     <i class="x-small material-icons">delete</i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+</body>
+</html>
